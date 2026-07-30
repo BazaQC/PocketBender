@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PocketBender — Conditions d'utilisation</title>
+<style>
+  :root{
+    --noir:#0A0A0A; --carte:#1A1A1A; --bord:#262626;
+    --orange:#FF6B00; --texte:#F2F2F2; --texte-2:#9A9A9A; --texte-3:#5E5E5E;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--noir);color:var(--texte);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.7;-webkit-font-smoothing:antialiased}
+  header{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;
+    padding:16px 24px;background:rgba(10,10,10,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--bord)}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px}
+  .logo .b{width:28px;height:28px;border-radius:7px;background:linear-gradient(145deg,var(--orange),#C24E00);
+    display:grid;place-items:center;color:#fff}
+  .logo b{color:var(--orange)}
+  .lang{display:flex;gap:2px;background:#141414;border:1px solid var(--bord);border-radius:9px;padding:3px}
+  .lang button{font:inherit;font-size:13px;font-weight:700;cursor:pointer;padding:5px 11px;border:none;
+    border-radius:6px;background:transparent;color:var(--texte-2)}
+  .lang button.on{background:var(--orange);color:#111}
+  main{max-width:760px;margin:0 auto;padding:56px 24px 90px}
+  h1{font-size:clamp(28px,5vw,40px);font-weight:850;letter-spacing:-.02em;margin-bottom:8px}
+  .maj{color:var(--texte-3);font-size:14px;margin-bottom:40px}
+  h2{font-size:20px;font-weight:750;color:var(--orange);margin:38px 0 12px}
+  p{color:var(--texte-2);margin-bottom:14px}
+  p strong{color:var(--texte)}
+  ul{color:var(--texte-2);margin:0 0 14px 22px}
+  li{margin-bottom:8px}
+  .box{background:var(--carte);border:1px solid var(--bord);border-radius:14px;padding:22px 24px;margin:24px 0}
+  .box p{margin:0;color:var(--texte)}
+  a{color:var(--orange);text-decoration:none}
+  a:hover{text-decoration:underline}
+  footer{border-top:1px solid var(--bord);padding:28px 24px;text-align:center;color:var(--texte-3);font-size:13px}
+  [data-lang]{display:none}
+  body.fr [data-lang="fr"]{display:revert}
+  body.en [data-lang="en"]{display:revert}
+</style>
+</head>
+<body class="fr">
+
+<header>
+  <div class="logo"><span class="b">⌐</span>Pocket<b>Bender</b></div>
+  <div class="lang">
+    <button id="fr" class="on" onclick="setLang('fr')">FR</button>
+    <button id="en" onclick="setLang('en')">EN</button>
+  </div>
+</header>
+
+<main>
+  <!-- ══════════ FRANÇAIS ══════════ -->
+  <div data-lang="fr">
+    <h1>Conditions d'utilisation</h1>
+    <p class="maj">Dernière mise à jour : 2026</p>
+
+    <p>En téléchargeant et en utilisant l'application PocketBender (« l'application »), vous acceptez les présentes conditions d'utilisation. Si vous n'y consentez pas, veuillez ne pas utiliser l'application.</p>
+
+    <h2>1. Objet de l'application</h2>
+    <p>PocketBender est un outil de calcul destiné à aider les électriciens et les gens de métier à déterminer les marques de pliage de conduit électrique (bends, offsets, kicks et saddles) et à les visualiser en 3D. L'application est vendue selon un modèle d'achat unique, sans abonnement, sans publicité et sans achat intégré.</p>
+
+    <h2>2. Licence d'utilisation</h2>
+    <p>Votre achat vous accorde une licence personnelle, non exclusive et non transférable pour utiliser l'application sur les appareils qui vous appartiennent, conformément aux règles de l'App Store d'Apple. Vous ne pouvez pas copier, modifier, décompiler, ni redistribuer l'application.</p>
+
+    <h2>3. Avertissement — vérification par l'utilisateur</h2>
+    <div class="box">
+      <p><strong>Les résultats fournis par l'application sont des aides au calcul. Vous demeurez responsable de vérifier vos mesures et vos plis avant de couper ou de plier tout matériau.</strong></p>
+    </div>
+    <p>Les calculs reposent sur des formules et des valeurs standard de l'industrie. Toutefois, les résultats réels peuvent varier selon votre équipement, l'usure de votre bender, le type de conduit et vos méthodes de travail. L'application ne remplace pas le jugement professionnel, la formation, ni le respect des codes et normes en vigueur (notamment le Code canadien de l'électricité, le National Electrical Code ou toute réglementation locale applicable).</p>
+
+    <h2>4. Absence de garantie</h2>
+    <p>L'application est fournie « telle quelle », sans garantie d'aucune sorte, expresse ou implicite. Nous ne garantissons pas que l'application sera exempte d'erreurs, ni que les résultats conviendront à un usage particulier.</p>
+
+    <h2>5. Limitation de responsabilité</h2>
+    <p>Dans les limites permises par la loi, l'éditeur de PocketBender ne pourra être tenu responsable de tout dommage direct, indirect, matériel, financier ou autre découlant de l'utilisation de l'application, y compris toute perte de matériau, erreur de pliage ou de coupe. L'utilisation de l'application se fait à vos propres risques.</p>
+
+    <h2>6. Propriété intellectuelle</h2>
+    <p>L'application, son code, son design, son nom et son logo sont la propriété de leur éditeur et sont protégés par les lois sur la propriété intellectuelle. Tous droits réservés.</p>
+
+    <h2>7. Achat et remboursement</h2>
+    <p>L'achat de l'application est traité par Apple. Toute demande de remboursement est soumise aux politiques de l'App Store d'Apple, sur lesquelles nous n'avons aucun contrôle.</p>
+
+    <h2>8. Modifications</h2>
+    <p>Ces conditions pourront être mises à jour. La version en vigueur est celle publiée sur cette page. En continuant d'utiliser l'application après une modification, vous acceptez les conditions révisées.</p>
+
+    <h2>9. Nous joindre</h2>
+    <p>Pour toute question relative aux présentes conditions, vous pouvez nous écrire à : <a href="mailto:Julien_carmel@hotmail.com">Julien_carmel@hotmail.com</a>.</p>
+    <p>PocketBender est édité par Julien Carmel Apps.</p>
+  </div>
+
+  <!-- ══════════ ENGLISH ══════════ -->
+  <div data-lang="en">
+    <h1>Terms of Service</h1>
+    <p class="maj">Last updated: 2026</p>
+
+    <p>By downloading and using the PocketBender application ("the app"), you agree to these Terms of Service. If you do not agree, please do not use the app.</p>
+
+    <h2>1. Purpose of the app</h2>
+    <p>PocketBender is a calculation tool designed to help electricians and tradespeople determine electrical conduit bending marks (bends, offsets, kicks and saddles) and visualize them in 3D. The app is sold under a one-time purchase model, with no subscription, no advertising and no in-app purchases.</p>
+
+    <h2>2. License</h2>
+    <p>Your purchase grants you a personal, non-exclusive, non-transferable license to use the app on devices you own, in accordance with Apple's App Store rules. You may not copy, modify, decompile or redistribute the app.</p>
+
+    <h2>3. Disclaimer — user verification</h2>
+    <div class="box">
+      <p><strong>The results provided by the app are calculation aids. You remain responsible for verifying your measurements and bends before cutting or bending any material.</strong></p>
+    </div>
+    <p>Calculations are based on standard industry formulas and values. However, actual results may vary depending on your equipment, bender wear, conduit type and working methods. The app does not replace professional judgment, training, or compliance with applicable codes and standards (including the Canadian Electrical Code, the National Electrical Code, or any applicable local regulation).</p>
+
+    <h2>4. No warranty</h2>
+    <p>The app is provided "as is," without warranty of any kind, express or implied. We do not warrant that the app will be error-free, or that results will be suitable for any particular purpose.</p>
+
+    <h2>5. Limitation of liability</h2>
+    <p>To the extent permitted by law, the publisher of PocketBender shall not be liable for any direct, indirect, material, financial or other damages arising from use of the app, including any loss of material, bending or cutting error. Use of the app is at your own risk.</p>
+
+    <h2>6. Intellectual property</h2>
+    <p>The app, its code, design, name and logo are the property of their publisher and are protected by intellectual property laws. All rights reserved.</p>
+
+    <h2>7. Purchase and refunds</h2>
+    <p>Purchase of the app is handled by Apple. Any refund request is subject to Apple's App Store policies, over which we have no control.</p>
+
+    <h2>8. Changes</h2>
+    <p>These terms may be updated. The version in force is the one posted on this page. By continuing to use the app after a change, you accept the revised terms.</p>
+
+    <h2>9. Contact us</h2>
+    <p>For any question about these terms, you can write to us at: <a href="mailto:Julien_carmel@hotmail.com">Julien_carmel@hotmail.com</a>.</p>
+    <p>PocketBender is published by Julien Carmel Apps.</p>
+  </div>
+</main>
+
+<footer>
+  <span data-lang="fr">© 2026 PocketBender. Tous droits réservés.</span>
+  <span data-lang="en">© 2026 PocketBender. All rights reserved.</span>
+</footer>
+
+<script>
+  function setLang(l){
+    document.body.classList.remove('fr','en');
+    document.body.classList.add(l);
+    document.documentElement.lang=l;
+    document.getElementById('fr').classList.toggle('on',l==='fr');
+    document.getElementById('en').classList.toggle('on',l==='en');
+    try{localStorage.setItem('pb-lang',l)}catch(e){}
+  }
+  (function(){let l='fr';try{l=localStorage.getItem('pb-lang')}catch(e){}
+   if(!l){l=(navigator.language||'fr').toLowerCase().startsWith('fr')?'fr':'en'}setLang(l)})();
+</script>
+</body>
+</html>
