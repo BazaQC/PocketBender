@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PocketBender — Politique de confidentialité</title>
+<style>
+  :root{
+    --noir:#0A0A0A; --carte:#1A1A1A; --bord:#262626;
+    --orange:#FF6B00; --texte:#F2F2F2; --texte-2:#9A9A9A; --texte-3:#5E5E5E;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--noir);color:var(--texte);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.7;-webkit-font-smoothing:antialiased}
+  header{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;
+    padding:16px 24px;background:rgba(10,10,10,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--bord)}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px}
+  .logo .b{width:28px;height:28px;border-radius:7px;background:linear-gradient(145deg,var(--orange),#C24E00);
+    display:grid;place-items:center;color:#fff}
+  .logo b{color:var(--orange)}
+  .lang{display:flex;gap:2px;background:#141414;border:1px solid var(--bord);border-radius:9px;padding:3px}
+  .lang button{font:inherit;font-size:13px;font-weight:700;cursor:pointer;padding:5px 11px;border:none;
+    border-radius:6px;background:transparent;color:var(--texte-2)}
+  .lang button.on{background:var(--orange);color:#111}
+  main{max-width:760px;margin:0 auto;padding:56px 24px 90px}
+  h1{font-size:clamp(28px,5vw,40px);font-weight:850;letter-spacing:-.02em;margin-bottom:8px}
+  .maj{color:var(--texte-3);font-size:14px;margin-bottom:40px}
+  h2{font-size:20px;font-weight:750;color:var(--orange);margin:38px 0 12px}
+  p{color:var(--texte-2);margin-bottom:14px}
+  p strong{color:var(--texte)}
+  ul{color:var(--texte-2);margin:0 0 14px 22px}
+  li{margin-bottom:8px}
+  .box{background:var(--carte);border:1px solid var(--bord);border-radius:14px;padding:22px 24px;margin:24px 0}
+  .box p{margin:0;color:var(--texte)}
+  a{color:var(--orange);text-decoration:none}
+  a:hover{text-decoration:underline}
+  footer{border-top:1px solid var(--bord);padding:28px 24px;text-align:center;color:var(--texte-3);font-size:13px}
+  [data-lang]{display:none}
+  body.fr [data-lang="fr"]{display:revert}
+  body.en [data-lang="en"]{display:revert}
+</style>
+</head>
+<body class="fr">
+
+<header>
+  <div class="logo"><span class="b">⌐</span>Pocket<b>Bender</b></div>
+  <div class="lang">
+    <button id="fr" class="on" onclick="setLang('fr')">FR</button>
+    <button id="en" onclick="setLang('en')">EN</button>
+  </div>
+</header>
+
+<main>
+  <!-- ══════════ FRANÇAIS ══════════ -->
+  <div data-lang="fr">
+    <h1>Politique de confidentialité</h1>
+    <p class="maj">Dernière mise à jour : 2026</p>
+
+    <div class="box">
+      <p><strong>En résumé : PocketBender ne recueille, ne stocke et ne transmet aucune donnée personnelle.</strong> L'application fonctionne entièrement sur votre appareil.</p>
+    </div>
+
+    <h2>1. Aucune collecte de données</h2>
+    <p>PocketBender est une application de calcul de pliage de conduit qui fonctionne entièrement hors ligne, sur votre appareil. Nous ne recueillons, ne conservons, ne partageons ni ne vendons aucune information personnelle vous concernant. L'application ne vous demande pas de créer un compte et ne requiert aucune identification.</p>
+
+    <h2>2. Données enregistrées sur votre appareil</h2>
+    <p>Les seules informations enregistrées le sont localement, sur votre appareil, uniquement pour le fonctionnement de l'application :</p>
+    <ul>
+      <li>votre préférence de langue et d'unité de mesure ;</li>
+      <li>les profils de bender que vous créez et leurs valeurs ;</li>
+      <li>le conduit en cours et vos calculs de pliage.</li>
+    </ul>
+    <p>Ces informations ne quittent jamais votre appareil et ne nous sont jamais transmises. Elles sont supprimées lorsque vous désinstallez l'application.</p>
+
+    <h2>3. Aucune publicité, aucun suivi</h2>
+    <p>PocketBender ne contient aucune publicité et n'utilise aucun outil de suivi, d'analyse ou de mesure d'audience. Aucun cookie, aucun identifiant publicitaire ni aucune technologie de traçage n'est employé.</p>
+
+    <h2>4. Aucun service tiers</h2>
+    <p>L'application ne fait appel à aucun service tiers susceptible de recueillir vos données. Elle n'établit pas de connexion à un serveur pour transmettre des informations personnelles.</p>
+
+    <h2>5. Achat de l'application</h2>
+    <p>PocketBender s'obtient par un achat unique sur l'App Store d'Apple. Cette transaction est gérée entièrement par Apple, selon les conditions et la politique de confidentialité d'Apple. Nous ne recevons aucune information de paiement de votre part.</p>
+
+    <h2>6. Évaluation dans l'App Store</h2>
+    <p>L'application peut vous inviter à laisser une évaluation. Cette invitation est gérée par le système officiel d'Apple ; aucune donnée n'est recueillie par nous à cette occasion.</p>
+
+    <h2>7. Enfants</h2>
+    <p>L'application ne recueillant aucune donnée, elle peut être utilisée sans risque pour la vie privée, quel que soit l'âge de l'utilisateur.</p>
+
+    <h2>8. Modifications</h2>
+    <p>Cette politique pourra être mise à jour. Toute modification sera publiée sur cette page, avec une date de mise à jour révisée.</p>
+
+    <h2>9. Nous joindre</h2>
+    <p>Pour toute question relative à cette politique de confidentialité, vous pouvez nous écrire à : <a href="mailto:Julien_carmel@hotmail.com">Julien_carmel@hotmail.com</a>.</p>
+    <p>PocketBender est édité par Julien Carmel Apps.</p>
+  </div>
+
+  <!-- ══════════ ENGLISH ══════════ -->
+  <div data-lang="en">
+    <h1>Privacy Policy</h1>
+    <p class="maj">Last updated: 2026</p>
+
+    <div class="box">
+      <p><strong>In short: PocketBender collects, stores and transmits no personal data.</strong> The app runs entirely on your device.</p>
+    </div>
+
+    <h2>1. No data collection</h2>
+    <p>PocketBender is a conduit bending calculator that works entirely offline, on your device. We do not collect, store, share or sell any personal information about you. The app does not ask you to create an account and does not require any identification.</p>
+
+    <h2>2. Data stored on your device</h2>
+    <p>The only information saved is stored locally, on your device, solely for the app to function:</p>
+    <ul>
+      <li>your language and measurement unit preferences;</li>
+      <li>the bender profiles you create and their values;</li>
+      <li>your current conduit and bending calculations.</li>
+    </ul>
+    <p>This information never leaves your device and is never transmitted to us. It is deleted when you uninstall the app.</p>
+
+    <h2>3. No advertising, no tracking</h2>
+    <p>PocketBender contains no advertising and uses no tracking, analytics or audience-measurement tools. No cookies, advertising identifiers or tracking technologies are used.</p>
+
+    <h2>4. No third-party services</h2>
+    <p>The app relies on no third-party service that could collect your data. It does not connect to any server to transmit personal information.</p>
+
+    <h2>5. Purchasing the app</h2>
+    <p>PocketBender is obtained through a one-time purchase on Apple's App Store. That transaction is handled entirely by Apple, under Apple's terms and privacy policy. We receive no payment information from you.</p>
+
+    <h2>6. App Store rating</h2>
+    <p>The app may invite you to leave a rating. This prompt is handled by Apple's official system; no data is collected by us in the process.</p>
+
+    <h2>7. Children</h2>
+    <p>Because the app collects no data, it can be used with no privacy risk, regardless of the user's age.</p>
+
+    <h2>8. Changes</h2>
+    <p>This policy may be updated. Any change will be posted on this page, with a revised update date.</p>
+
+    <h2>9. Contact us</h2>
+    <p>For any question about this privacy policy, you can write to us at: <a href="mailto:Julien_carmel@hotmail.com">Julien_carmel@hotmail.com</a>.</p>
+    <p>PocketBender is published by Julien Carmel Apps.</p>
+  </div>
+</main>
+
+<footer>
+  <span data-lang="fr">© 2026 PocketBender. Tous droits réservés.</span>
+  <span data-lang="en">© 2026 PocketBender. All rights reserved.</span>
+</footer>
+
+<script>
+  function setLang(l){
+    document.body.classList.remove('fr','en');
+    document.body.classList.add(l);
+    document.documentElement.lang=l;
+    document.getElementById('fr').classList.toggle('on',l==='fr');
+    document.getElementById('en').classList.toggle('on',l==='en');
+    try{localStorage.setItem('pb-lang',l)}catch(e){}
+  }
+  (function(){let l='fr';try{l=localStorage.getItem('pb-lang')}catch(e){}
+   if(!l){l=(navigator.language||'fr').toLowerCase().startsWith('fr')?'fr':'en'}setLang(l)})();
+</script>
+</body>
+</html>
