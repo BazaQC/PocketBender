@@ -255,11 +255,6 @@ body.en [data-lang="fr"]{display:none !important}
 
   <!-- Démo : le calcul comme sur le terrain -->
   <div class="demo reveal">
-    <div class="demo-top">
-      <span class="dot" style="background:#FF5F57"></span>
-      <span class="dot" style="background:#FEBC2E"></span>
-      <span class="dot" style="background:#28C840"></span>
-    </div>
     <div class="demo-body">
       <div class="demo-label" data-lang="fr">Bend 90° · Conduit 1/2"</div>
       <div class="demo-label" data-lang="en">90° bend · 1/2" conduit</div>
@@ -280,8 +275,23 @@ body.en [data-lang="fr"]{display:none !important}
         <div class="n" data-lang="fr">Mesurez 13" depuis l'extrémité, puis pliez à 90°.</div>
         <div class="n" data-lang="en">Measure 13" from the end, bend to 90°.</div>
       </div>
-
-      <div class="tape"><div class="cursor" style="left:calc(13/24*100%)"></div></div>
+      <svg width="100%" height="34" viewBox="0 0 500 34" preserveAspectRatio="xMidYMid meet" style="margin-top:20px;display:block">
+  <!-- Tube métallique -->
+  <defs>
+    <linearGradient id="tube" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6a7a8a"/>
+      <stop offset="30%" stop-color="#a0adb8"/>
+      <stop offset="50%" stop-color="#c5ced5"/>
+      <stop offset="70%" stop-color="#a0adb8"/>
+      <stop offset="100%" stop-color="#5a6a7a"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="7" width="480" height="20" rx="10" fill="url(#tube)"/>
+  <!-- Marque orange -->
+  <rect x="270" y="3" width="4" height="28" rx="2" fill="#FF6B00"/>
+  <rect x="266" y="0" width="12" height="4" rx="1" fill="#FF6B00" opacity=".7"/>
+  <rect x="266" y="30" width="12" height="4" rx="1" fill="#FF6B00" opacity=".7"/>
+</svg>
     </div>
   </div>
 </div>
