@@ -216,8 +216,10 @@
 
   /* Cache l'une ou l'autre langue */
   [data-lang]{display:none}
-  body.fr [data-lang="fr"]{display:revert}
-  body.en [data-lang="en"]{display:revert}
+body.fr [data-lang="fr"]{display:revert}
+body.en [data-lang="en"]{display:revert}
+body.fr [data-lang="en"]{display:none !important}
+body.en [data-lang="fr"]{display:none !important}
   /* pour les éléments qui doivent rester flex/grid */
   body.fr .demo-in[data-lang="fr"],body.en .demo-in[data-lang="en"]{display:flex}
 </style>
@@ -429,7 +431,7 @@
         <p data-lang="fr">Le bond classique</p><p data-lang="en">The classic stub</p>
       </div>
       <div class="bend reveal">
-        <div class="g"><svg width="90" height="56" viewBox="0 0 90 56"><path class="steel" d="M8 40 H28 Q32 40 35 34 L49 22 Q52 16 56 16 H82"/><circle class="mk" cx="32" cy="40" r="3"/><circle class="mk" cx="52" cy="16" r="4.5"/></svg></div>
+        <div class="g"><svg width="90" height="56" viewBox="0 0 90 56"><path class="steel" d="M8 40 H28 Q32 40 35 34 L49 22 Q52 16 56 16 H82"/><circle class="mk" cx="32" cy="40" r="3"/><circle class="mk" cx="52" cy="16" r="3"/></svg></div>
         <h4>Offset</h4>
         <p data-lang="fr">Contourner un obstacle</p><p data-lang="en">Clear an obstacle</p>
       </div>
@@ -439,12 +441,12 @@
         <p data-lang="fr">Atteindre une hauteur</p><p data-lang="en">Rise to a height</p>
       </div>
       <div class="bend reveal">
-        <div class="g"><svg width="90" height="56" viewBox="0 0 90 56"><path class="steel" d="M6 42 H22 Q26 42 29 36 L41 18 Q45 14 49 18 L60 36 Q63 42 67 42 H84"/><circle class="mk" cx="26" cy="42" r="3"/><circle class="mk" cx="45" cy="14" r="4.5"/><circle class="mk" cx="64" cy="42" r="4.5"/></svg></div>
+        <div class="g"><svg width="90" height="56" viewBox="0 0 90 56"><path class="steel" d="M6 42 H22 Q26 42 29 36 L41 18 Q45 14 49 18 L60 36 Q63 42 67 42 H84"/><circle class="mk" cx="26" cy="42" r="3"/><circle class="mk" cx="45" cy="14" r="3"/><circle class="mk" cx="64" cy="42" r="4.5"/></svg></div>
         <h4 data-lang="fr">Saddle 3 pts</h4><h4 data-lang="en">3-pt saddle</h4>
         <p data-lang="fr">Passer au-dessus</p><p data-lang="en">Go over a pipe</p>
       </div>
       <div class="bend reveal">
-        <div class="g"><svg width="90" height="56" viewBox="0 0 90 56"><path class="steel" d="M4 44 H16 Q20 44 23 38 L33 24 Q36 20 40 20 H52 Q56 20 59 24 L69 38 Q72 44 76 44 H88"/><circle class="mk" cx="20" cy="44" r="4"/><circle class="mk" cx="36" cy="20" r="4"/><circle class="mk" cx="56" cy="20" r="4"/><circle class="mk" cx="72" cy="44" r="3"/></svg></div>
+        <div class="g"><svg width="90" height="56" viewBox="0 0 90 56"><path class="steel" d="M4 44 H16 Q20 44 23 38 L33 24 Q36 20 40 20 H52 Q56 20 59 24 L69 38 Q72 44 76 44 H88"/><circle class="mk" cx="20" cy="44" r="4"/><circle class="mk" cx="36" cy="20" r="3"/><circle class="mk" cx="56" cy="20" r="4"/><circle class="mk" cx="72" cy="44" r="3"/></svg></div>
         <h4 data-lang="fr">Saddle 4 pts</h4><h4 data-lang="en">4-pt saddle</h4>
         <p data-lang="fr">Franchir un large obstacle</p><p data-lang="en">Cross a wide obstacle</p>
       </div>
